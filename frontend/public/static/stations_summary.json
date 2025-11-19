@@ -1,0 +1,57 @@
+[
+  {
+    "station_id": 101,
+    "name": "Station 101",
+    "avg_voltage": 225.11,
+    "avg_current": 21.9,
+    "avg_sessions": 55.9,
+    "total_revenue_inr": 503100.0,
+    "latitude": 18.48935,
+    "longitude": 74.0416,
+    "rows": 30
+  },
+  {
+    "station_id": 102,
+    "name": "Station 102",
+    "avg_voltage": 228.15,
+    "avg_current": 21.3,
+    "avg_sessions": 55.27,
+    "total_revenue_inr": 497400.0,
+    "latitude": 18.49444,
+    "longitude": 73.99874,
+    "rows": 30
+  },
+  {
+    "station_id": 103,
+    "name": "Station 103",
+    "avg_voltage": 225.27,
+    "avg_current": 24.26,
+    "avg_sessions": 60.67,
+    "total_revenue_inr": 546000.0,
+    "latitude": 18.48996,
+    "longitude": 74.03606,
+    "rows": 30
+  },
+  {
+    "station_id": 104,
+    "name": "Station 104",
+    "avg_voltage": 220.58,
+    "avg_current": 20.73,
+    "avg_sessions": 59.27,
+    "total_revenue_inr": 533400.0,
+    "latitude": 18.49012,
+    "longitude": 74.04731,
+    "rows": 30
+  },
+  {
+    "station_id": 105,
+    "name": "Station 105",
+    "avg_voltage": 226.72,
+    "avg_current": 19.85,
+    "avg_sessions": 57.47,
+    "total_revenue_inr": 517200.0,
+    "latitude": 18.51774,
+    "longitude": 73.97399,
+    "rows": 30
+  }
+]

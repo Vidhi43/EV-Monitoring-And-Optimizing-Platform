@@ -1,0 +1,208 @@
+.app {
+  font-family: "Segoe UI", Arial, sans-serif;
+  padding: 16px;
+  background: #f5f6fa;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.main {
+  display: flex;
+  gap: 16px;
+}
+
+.map-area {
+  flex: 2;
+}
+
+.side-panel {
+  flex: 1;
+  background: white;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 6px 10px;
+  margin: 4px;
+  background: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005a9e;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  margin: 4px 0;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* App.css */
+body { margin:0; font-family: Inter, "Segoe UI", Arial; background:#060607; color:#fff; }
+a{ color:inherit; }
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: radial-gradient(circle at 20% 20%, #001f1f, #000);
+  color: white;
+  text-align: center;
+}
+
+.login-container input {
+  margin: 8px;
+  padding: 10px;
+  width: 240px;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-container button {
+  margin-top: 10px;
+  padding: 10px 25px;
+  background: #00ff88;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.dashboard {
+  background-color: #0a0a0a;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-header button {
+  background: #00ff88;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+/* Background setup */
+.login-bg {
+  background: url("/bg.png") no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dark overlay for readability */
+.login-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+}
+
+/* Glassmorphism card */
+.login-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  width: 350px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 255, 100, 0.2);
+  z-index: 1;
+  color: #e6ffe6;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Title and subtitle */
+.login-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #00ff88;
+  text-shadow: 0 0 10px #00ff88;
+}
+
+.login-subtitle {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #b3ffcc;
+}
+
+/* Inputs */
+form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #eaffea;
+  outline: none;
+  font-size: 1rem;
+}
+
+form input::placeholder {
+  color: #c6ffd9;
+}
+
+/* Button */
+form button {
+  width: 100%;
+  padding: 0.8rem;
+  background: linear-gradient(90deg, #00ff88, #0077ff);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00ff88;
+}
+
+/* Error message */
+.error {
+  color: #ff6b6b;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}

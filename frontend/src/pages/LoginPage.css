@@ -1,0 +1,147 @@
+/* ==========================================
+   ⚡ EV Charging System Login Page Styling
+   ========================================== */
+
+/* Neon background with your public/bg.png */
+.login-bg {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+
+/* Dark overlay */
+.login-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 0;
+}
+
+/* Floating glow animation */
+@keyframes moveParticles {
+  0% { transform: translateY(0px); opacity: 0.4; }
+  50% { transform: translateY(-20px); opacity: 0.8; }
+  100% { transform: translateY(0px); opacity: 0.4; }
+}
+
+.login-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(0,255,136,0.08) 2px, transparent 2px);
+  background-size: 50px 50px;
+  animation: moveParticles 6s infinite ease-in-out alternate;
+  z-index: 0;
+}
+
+/* Glassmorphic card */
+.login-card {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 255, 150, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 35px rgba(0, 255, 136, 0.4);
+}
+
+/* Title + subtitle */
+.login-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #00ff88;
+
+}
+
+.login-subtitle {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #b3ffcc;
+}
+
+/* Input fields */
+form input {
+  width: 90%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #eaffea;
+  outline: none;
+  font-size: 1rem;
+  transition: box-shadow 0.2s;
+}
+
+form input:focus {
+  box-shadow: 0 0 8px rgba(0, 255, 136, 0.6);
+}
+
+form input::placeholder {
+  color: #c6ffd9;
+}
+
+/* Login button */
+form button {
+  width: 100%;
+  padding: 0.8rem;
+  background: linear-gradient(90deg, #00ff88, #0077ff);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+
+@keyframes glowPulse {
+  from { box-shadow: 0 0 6px #00ff88; }
+  to { box-shadow: 0 0 20px #00ff88; }
+}
+
+form button:hover {
+  transform: scale(1.05);
+}
+
+/* Disabled state */
+form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Error message */
+.error {
+  color: #ff6b6b;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  text-shadow: 0 0 4px #ff0000;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-card {
+    width: 90%;
+    padding: 2rem 1.5rem;
+  }
+  .login-title {
+    font-size: 1.5rem;
+  }
+}
