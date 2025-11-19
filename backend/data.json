@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "stationUser",
+      "password": "5678",
+      "role": "station"
+    },
+    {
+      "id": 2,
+      "username": "companyAdmin",
+      "password": "1234",
+      "role": "company"
+    }
+  ],
+  "complaints": [
+    {
+      "id": 1762844798303,
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "issue": "example\n",
+      "status": "Accepted",
+      "created_at": "2025-11-11T07:06:38.303Z",
+      "updated_at": "2025-11-11T07:08:17.022Z"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "stations": [
+    {
+      "id": 1,
+      "name": "Station A (Delhi)",
+      "lat": 28.7041,
+      "lng": 77.1025,
+      "price": 12.5,
+      "energy": "AC 22kW"
+    },
+    {
+      "id": 2,
+      "name": "Station B (Mumbai)",
+      "lat": 19.076,
+      "lng": 72.8777,
+      "price": 11,
+      "energy": "DC 50kW"
+    },
+    {
+      "id": 3,
+      "name": "Station C (Chennai)",
+      "lat": 13.0827,
+      "lng": 80.2707,
+      "price": 13.2,
+      "energy": "AC 7kW"
+    }
+  ],
+  "approvals": [],
+  "contacts": [],
+  "users": [
+    {
+      "id": 1,
+      "role": "company",
+      "username": "companyAdmin",
+      "password": "1234",
+      "name": "Company Admin"
+    },
+    {
+      "id": 2,
+      "role": "station",
+      "username": "stationUser",
+      "password": "5678",
+      "name": "Station User"
+    }
+  ]
+}
